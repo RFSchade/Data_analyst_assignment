@@ -16,8 +16,8 @@ The program is instructed to leave the position, a, b, c, d, and weight columns 
 stores all information extracted to these columns.     
 The program is also instructed to leave the a, b, c, and d columns blank when "AssayResults" 
 has no "FitResult"-key, which contains the information extracted into these.   
-A lot of the missing values in the weight columns seem to be because the data does not always report the same no. of statistics under "StatisticTestResults". This could have been mitigated through some extra validation. 
-Once the data is extracted, there is also no link between a specific datapoint and the file it was extracted from. This made a lot of this "detective work" I have been doing to figure out where the missing data comes from a lot more cumbersome. 
+A lot of the missing values in the weight columns seem to be because the data does not always report the same no. of statistics under "StatisticTestResults". This could have been mitigated through some extra validation.     
+Once the data is extracted, there is also no link between a specific datapoint and the file it was extracted from. This makes it a lot harder to "track" missing data. 
 
 ### Plotting
 For a more thorough breakdown of the code, see plots_and_code.html in the R folder. 
