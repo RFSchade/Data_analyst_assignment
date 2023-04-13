@@ -22,6 +22,37 @@ Once the data is extracted, there is also no link between a specific datapoint a
 ### Plotting
 For a more thorough breakdown of the code, see plots_and_code.html in the R folder. 
 
-After loading in the output of the data_extraction.py scipt, I looked through the data to get an overview, and decided to remove NAs in the position, a, b, c, and d columns for easier plotting. I decided agains doing the same with the weight column, because the number of NAs are for greater, and thus a lot more data would be lost. 
-
+After loading in the output of the data_extraction.py scipt, I looked through the data to get an overview, and decided to remove NAs in the position, a, b, c, and d columns for easier plotting. I decided agains doing the same with the weight column, because the number of NAs are for greater, and thus a lot more data would be lost.     
 Then, once again through a series of subsets and iterations, the data was plotted. 
+
+To 
+
+## Repository Structure
+- __:file_folder: api:__ Folder for API code
+    - main.py: script that creates the API
+
+- __:file_folder: Data:__ Folder for input data to add to the database
+- __:file_folder: db:__ Folder for .db (database) file 
+- __:file_folder: src:__ Folder for python scripts for the database
+    - create_database.py: Creates the database and adds the data from the csv file to as a table. Will yield an error message if a _cereal_database.db_ file already exists in the _db_ folder. 
+    - data_cleaning.py: Cleans data and assigns ID to cereals.
+    
+- __:page_facing_up: .gitignore__
+- __:page_facing_up: requirements.txt__
+
+## How to use
+The modules listed in requirements.txt should be installed before the python script is run. The code is written for Python 3.11.1.
+__data_extraction.py__
+TTo play the game, run Master-script.py from the repository folder. The script has 3 arguments:
+
+-dv or --dev_cheat: When the argument is called the code secret code will appear underneath the score display
+-c or --colour: The colours used in the game to make codes. Colours should be typed in separated by a space. Keep an eye on how you spell the colours - the way you type them in will be used as a reference for how the player is scored. You can pick as many or as few colours as you want!
+-t or --max_turns: How many turns a player has to guess the code
+-h or --help: Shows information on how to use the various arguments (the same as wht is written here)
+Example of code running the script from the terminal:
+
+```
+python src/Master_script.py -dv -t nr_turns -c colour_1 colour_2 colour_3
+```
+__plots_and_code.Rmd__
+Should be run within R studio. Uncomment line if pacman is not installed. 
