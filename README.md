@@ -40,18 +40,14 @@ Then, once again through a series of subsets and iterations, the data was plotte
 
 
 ## How to use
-The modules listed in requirements.txt should be installed before the python script is run. The code is written for Python 3.11.1.
-__data_extraction.py__
-TTo play the game, run Master-script.py from the repository folder. The script has 3 arguments:
+The modules listed in requirements.txt __(doesn't exist yet)__ should be installed before the python script is run. The code is written for Python 3.11.1.    
 
--dv or --dev_cheat: When the argument is called the code secret code will appear underneath the score display
--c or --colour: The colours used in the game to make codes. Colours should be typed in separated by a space. Keep an eye on how you spell the colours - the way you type them in will be used as a reference for how the player is scored. You can pick as many or as few colours as you want!
--t or --max_turns: How many turns a player has to guess the code
--h or --help: Shows information on how to use the various arguments (the same as wht is written here)
+__data_extraction.py__    
+To extract data, run Master-script.py from the repository folder.     
 Example of code running the script from the terminal:
 
 ```
 python src/Master_script.py -dv -t nr_turns -c colour_1 colour_2 colour_3
 ```
-__plots_and_code.Rmd__
-Should be run within R studio. Uncomment line if pacman is not installed. 
+__plots_and_code.Rmd__    
+Should be run within R studio. If `pacman` is not installed, you may need to instal it first. 
