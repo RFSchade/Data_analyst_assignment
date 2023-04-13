@@ -25,20 +25,19 @@ For a more thorough breakdown of the code, see plots_and_code.html in the R fold
 After loading in the output of the data_extraction.py scipt, I looked through the data to get an overview, and decided to remove NAs in the position, a, b, c, and d columns for easier plotting. I decided agains doing the same with the weight column, because the number of NAs are for greater, and thus a lot more data would be lost.     
 Then, once again through a series of subsets and iterations, the data was plotted. 
 
-To 
-
 ## Repository Structure
-- __:file_folder: api:__ Folder for API code
-    - main.py: script that creates the API
+- __:file_folder: R:__ Folder for R markdowns
+    - plots_and_code.Rmd: R markdown that produces plots
+    - plots_and_code.html: The markdown above knotted into a HTML-file for easy viewing  
 
-- __:file_folder: Data:__ Folder for input data to add to the database
-- __:file_folder: db:__ Folder for .db (database) file 
-- __:file_folder: src:__ Folder for python scripts for the database
-    - create_database.py: Creates the database and adds the data from the csv file to as a table. Will yield an error message if a _cereal_database.db_ file already exists in the _db_ folder. 
-    - data_cleaning.py: Cleans data and assigns ID to cereals.
+- __:file_folder: data:__ Folder for input data
+- __:file_folder: output:__ Folder output of python script 
+- __:file_folder: plots:__ Folder for output of R markdown
+- __:file_folder: python:__ Folder for python script
+    - data_extraction.py: Extracts data from JSON files
     
 - __:page_facing_up: .gitignore__
-- __:page_facing_up: requirements.txt__
+
 
 ## How to use
 The modules listed in requirements.txt should be installed before the python script is run. The code is written for Python 3.11.1.
