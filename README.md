@@ -24,3 +24,4 @@ For a more thorough breakdown of the code, see plots_and_code.html in the R fold
 
 After loading in the output of the data_extraction.py scipt, I looked through the data to get an overview, and decided to remove NAs in the position, a, b, c, and d columns for easier plotting. I decided agains doing the same with the weight column, because the number of NAs are for greater, and thus a lot more data would be lost. 
 
+Then, once again through a series of subsets and iterations, the data was plotted. 
