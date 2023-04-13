@@ -8,3 +8,10 @@ markdowns/**
 # Ignore data in the 'data' folder
 data/**
 !data/.gitkeep
+
+# Ignore data in the 'output' folder
+output/**
+
+# Ignore data in the 'plots' folder
+plots/**
+!plots/.gitkeep
