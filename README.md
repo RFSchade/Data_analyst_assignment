@@ -50,4 +50,11 @@ Example of code running the script from the terminal:
 python src/Master_script.py -dv -t nr_turns -c colour_1 colour_2 colour_3
 ```
 __plots_and_code.Rmd__    
-Should be run within R studio. If `pacman` is not installed, you may need to instal it first. 
+The markdown was made using R version 4.2.2 and can be run withn RStudio - in particular it was built using RStudio 2023.03.0+386.    
+The markdown is dependant on the following packages: 
+- pacman
+- tidyverse
+- plyr
+- DT
+
+If `pacman` is not installed, you may need to install it before running code. 
