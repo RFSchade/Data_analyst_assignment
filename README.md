@@ -47,7 +47,7 @@ To extract data, run Master-script.py from the repository folder.
 Example of code running the script from the terminal:
 
 ```
-python src/Master_script.py -dv -t nr_turns -c colour_1 colour_2 colour_3
+python python/data_extraction.py
 ```
 __plots_and_code.Rmd__    
 The markdown was made using R version 4.2.2 and can be run withn RStudio - in particular it was built using RStudio 2023.03.0+386.    
