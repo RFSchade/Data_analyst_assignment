@@ -37,10 +37,10 @@ Then, once again through a series of subsets and iterations, the data was plotte
     - data_extraction.py: Extracts data from JSON files
     
 - __:page_facing_up: .gitignore__
-
+- __:page_facing_up: requirements.txt__
 
 ## How to use
-The modules listed in requirements.txt __(doesn't exist yet)__ should be installed before the python script is run. The code is written for Python 3.11.1.    
+The modules listed in requirements.txt should be installed before the python script is run. The code is written for Python 3.11.1.    
 
 __data_extraction.py__    
 To extract data, run Master-script.py from the repository folder.     
